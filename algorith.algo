@@ -1,0 +1,23 @@
+ALGORITHM sentence_count
+VAR 
+    LongSen,Nbrmot,Nbrvoy,i : INTEGER
+    Sentence : STRING : = "Ceci est une phrase simple"
+    str : STRING
+    
+BEGIN 
+   LongSen:= len(Sentence);
+   Nbrmot : =0;
+   Nbrvoy := 0;
+   str : = lower(Sentence)
+    FOR ( i: =0 ,i< LongSen, i++) DO
+        IF (str[i] == "a"|| str[i]== "o" || str[i] == "u" || str [i] == "e" || str[i] == "i" ) THEN
+            Nbrvoy ++;
+        END_IF
+        IF ( srt[i] == " ") THEN
+            Nbrmot ++
+        END_IF
+    END_FOR
+    WRITE(LongSen);
+    WRITE(Nbrmot);
+    WRITE(Nbrvoy);
+END
